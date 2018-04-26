@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Priming effects in language change as diagnostics of grammatical structure</title>
+<meta name="author" content="(Aaron Ecay)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1>Priming effects in language change as diagnostics of grammatical structure</h1>
+</section>
+
+<section>
+<section id="slide-org400a599">
+<h2 id="org400a599">Introduction</h2>
+<div class="outline-text-2" id="text-org400a599">
+</div>
+</section>
+<section id="slide-org49314da">
+<h3 id="org49314da">Grammatical analysis in historical syntax</h3>
+<ul>
+<li class="fragment">Goal of syntactic analysis: give a theory of grammar that accounts for the observed syntax of natural languages</li>
+<li class="fragment">In historical lx context: crucial evidence is missing
+<ul>
+<li class="fragment">Grammaticality judgments</li>
+<li class="fragment">Psycholinguistic measurements (in the traditional sense)</li>
+<li class="fragment">&#x2026;so we need something else</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org977dad1">
+<h3 id="org977dad1">Grammatical analysis in historical syntax</h3>
+<ul>
+<li class="fragment">Luckily historical lx also gets some things that are richer
+<ul>
+<li class="fragment">Diachronic data</li>
+<li class="fragment">By looking into the past, we actually are looking into the (former) future</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org7554304">
+<h3 id="org7554304">The Constant Rate Hypothesis</h3>
+
+<ul>
+<li class="fragment">Classic method for bridging the gap between diachronic data and grammatical theory<sup style="font-size:50%;"><abbr title="Kroch 1989">cite</abbr></sup></li>
+<li class="fragment"><p>
+Based on Ockhamʼs Razor
+</p>
+
+
+<div id="orge7e26d5" class="figure">
+<p><object type="image/svg+xml" data="crh-graph.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div></li>
+
+</ul>
+
+</section>
+<section id="slide-orgd56a930">
+<h3 id="orgd56a930">Beyond the CRH</h3>
+
+<ul>
+<li class="fragment">It has been pointed out that all cases of S-shaped diachronic change are not necessarily attributable to CRH effects<sup style="font-size:50%;"><abbr title="Kauhanen 2016; Kauhanen &amp; Walkden 2017">cite</abbr></sup></li>
+<li class="fragment">In any case, it would be nice to have another tool for bridging between diachronic data and grammatical theory</li>
+<li class="fragment">Enter priming</li>
+
+</ul>
+
+</section>
+<section id="slide-orgd761719">
+<h3 id="orgd761719">Persistence: a brief overview</h3>
+<blockquote>
+<p>
+Persistence is the tendency for a recently-used variant of a linguistic variable to be used again – each token is to some extent dependent on the token or tokens before it.
+</p>
+</blockquote>
+
+</section>
+<section id="slide-orge15db42">
+<h3 id="orge15db42">Persistence, priming, and facilitation</h3>
+<ul>
+<li class="fragment">Can be taken to arise from <b>priming</b>, among other sources
+<ul>
+<li class="fragment">A psychological tendency to repeat mental representations</li>
+
+</ul></li>
+<li class="fragment">Can also be called “facilitation”</li>
+
+</ul>
+
+</section>
+<section id="slide-orgbf78a5f">
+<h3 id="orgbf78a5f">Priming in historical lingusitics</h3>
+
+<ul>
+<li class="fragment">If priming is real<sup style="font-size:50%;"><abbr title="Bock 1986; Pickering &amp; Branigan 1999; Pickering &amp; Ferreira 2008">cite</abbr></sup>&#x2026;</li>
+<li class="fragment">And if it occurs in written material<sup style="font-size:50%;"><abbr title="Sankoff &amp; Laberge 1978; Estival 1985">cite</abbr></sup>&#x2026;</li>
+<li class="fragment">Then we should be able to detect it in historical corpora</li>
+
+</ul>
+
+</section>
+<section id="slide-org9cf1480">
+<h3 id="org9cf1480">The rest of the talk</h3>
+<ul>
+<li class="fragment">Case study 1: Middle English negation</li>
+<li class="fragment">Case study 2: Do-support</li>
+<li class="fragment">(time permitting): Modeling priming vs. style-shifting</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgba3d94c">
+<h2 id="orgba3d94c">Middle English negation</h2>
+<div class="outline-text-2" id="text-orgba3d94c">
+</div>
+</section>
+<section id="slide-orgc3dfed4">
+<h3 id="orgc3dfed4">The change in negation</h3>
+<ul>
+<li class="fragment">In Middle English, there is a change in the exponence of Neg</li>
+<li class="fragment">The negator <i>ne</i>, inherited from OE, is lost</li>
+<li class="fragment"><i>not</i>, formerly a negative adverb, becomes the new negator</li>
+
+</ul>
+
+</section>
+<section id="slide-orgf4f67d4">
+<h3 id="orgf4f67d4">Details of the change</h3>
+
+<ul>
+<li class="fragment"><p>
+During the period of the change, a large number of negative sentences have both <i>ne</i> and <i>not</i>
+</p>
+
+<blockquote>
+<p>
+he ne shal nouʒt decieue him (Early Prose Psalter, 161:131:11, from
+Frisch 1997)
+</p>
+</blockquote></li>
+
+</ul>
+
+</section>
+<section id="slide-orgc1ee06d">
+<h3 id="orgc1ee06d">Negation in ME</h3>
+
+<div id="org4bf54d8" class="figure">
+<p><object type="image/svg+xml" data="three-lines.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+
+</section>
+<section id="slide-orgc5d0d2e">
+<h3 id="orgc5d0d2e">Two analyses</h3>
+
+<ul>
+<li class="fragment">Frisch (1997): there are only two mental objects, <i>ne</i> and <i>not</i>
+<ul>
+<li class="fragment">Sentences with both are the result of both being activated at once</li>
+
+</ul></li>
+<li class="fragment">Wallage (2008, 2012): <i>ne + not</i> is its own mental object with discernably
+different properties from either of the individual ingredients</li>
+
+</ul>
+
+</section>
+<section id="slide-org0257bce">
+<h3 id="org0257bce">Priming analysis</h3>
+<ul>
+<li class="fragment">Frisch predicts that sentences with <i>ne&#x2026;not</i> should facilitate <i>ne</i>
+just as much as sentences with <i>ne</i> alone</li>
+<li class="fragment"><p>
+False
+</p>
+
+
+<div id="orgb35164f" class="figure">
+<p><object type="image/svg+xml" data="ne-not-graph.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div></li>
+
+</ul>
+
+</section>
+<section id="slide-orgc68371f">
+<h3 id="orgc68371f">Priming analysis</h3>
+<ul>
+<li class="fragment">Wallage predicts that each of the three types should facilitate only itself</li>
+<li class="fragment"><p>
+Basically true (with some extra interpretation)
+</p>
+
+
+<div id="org9a6e863" class="figure">
+<p><object type="image/svg+xml" data="patch-graph.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org99971ad">
+<h3 id="org99971ad">Conclusions</h3>
+<ul>
+<li class="fragment">The priming data supports Wallageʼs account more than Frischʼs</li>
+<li class="fragment">It forms one piece of the evidence to reject Frischʼs account</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org809edf8">
+<h2 id="org809edf8">Do support</h2>
+<div class="outline-text-2" id="text-org809edf8">
+</div>
+</section>
+<section id="slide-orgc44e3e1">
+<h3 id="orgc44e3e1">Background</h3>
+<ul>
+<li class="fragment">In Early Modern English, <i>do</i> support is innovated in NICE contexts
+<ul>
+<li class="fragment">negation, inversion, contrast, ellipsis</li>
+
+</ul></li>
+<li class="fragment">Additionally, auxiliary <i>do</i> is inserted in affirmative declaratives
+quite often
+<ul>
+<li class="fragment">Peak of 10%</li>
+<li class="fragment">Important: not <i>do</i> support</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+<section id="slide-org6b18be7">
+<h3 id="org6b18be7">Do as argument structure marker</h3>
+
+<ul>
+<li class="fragment">Iʼve argued that before 1600, <i>do</i> functions as a marker of agentive
+subjects<sup style="font-size:50%;"><abbr title="Ecay 2015">cite</abbr></sup>
+<ul>
+<li class="fragment">Explains its appearance in affirmative declaratives, among other facts</li>
+
+</ul></li>
+<li class="fragment">This is true even in NICE contexts</li>
+<li class="fragment">My claim: there is no <small>(or very
+little)</small> do-support in English before 1600</li>
+<li class="fragment">After 1600, NI(CE) contexts have do-support whereas affirmative
+declaratives maintain agent-marker do (archaism)</li>
+
+</ul>
+
+</section>
+<section id="slide-org352afa7">
+<h3 id="org352afa7">Priming consequences</h3>
+<ul>
+<li class="fragment">Prediction: pre-1600 facilitation between affirmative declarative <i>do</i>
+and NICE <i>do</i>
+<ul>
+<li class="fragment">Because they are the same mental object</li>
+
+</ul></li>
+<li class="fragment">Post-1600 no facilitation
+<ul>
+<li class="fragment"><p>
+They are no longer the same
+</p>
+
+<div id="orgbdda00a" class="figure">
+<p><object type="image/svg+xml" data="do-priming.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div></li>
+
+</ul></li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org3c2ce5d">
+<h2 id="org3c2ce5d">Modeling priming vs. style-shifting</h2>
+<div class="outline-text-2" id="text-org3c2ce5d">
+</div>
+</section>
+<section id="slide-org5251ee4">
+<h3 id="org5251ee4">Style shifting</h3>
+<ul>
+<li class="fragment">Style shifting could create effects that look like priming
+<ul>
+<li class="fragment">In the extreme, a sequence of variants AAAA&#x2026;BBBB&#x2026;</li>
+
+</ul></li>
+<li class="fragment">More of a concern in naturalistic settings than experimentally</li>
+<li class="fragment">But, we might be able to use statistical modeling to control for this</li>
+
+</ul>
+
+</section>
+<section id="slide-org4de5152">
+<h3 id="org4de5152">GA(M)Ms</h3>
+<ul>
+<li class="fragment">Traditional regression models: the mathematical form of a time-varying component is given
+<ul>
+<li class="fragment">Linear, cubic, &#x2026;</li>
+
+</ul></li>
+<li class="fragment">Generalized Additive Model: fit as much (or as little) time-varying structure as needed</li>
+<li class="fragment">G. A. Mixed Model: same relationship to GAM as lm ~ lmm</li>
+
+</ul>
+
+</section>
+<section id="slide-org65b6c55">
+<h3 id="org65b6c55">Estimates of style-shifting</h3>
+<ul>
+<li class="fragment">Data from Philadelphia Neighborhood Corpus</li>
+<li class="fragment"><p>
+/ð/-stopping (<i>this</i> → <i>dis</i>)
+</p>
+
+
+<div class="figure">
+<p><object type="image/svg+xml" data="gamm-smooths-LV.svg" class="org-svg" width="600px">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div></li>
+
+</ul>
+
+</section>
+<section id="slide-org03092f2">
+<h3 id="org03092f2">Priming in the GAMM</h3>
+<ul>
+<li class="fragment"><p>
+We can add the previous token to this model as an additional predictor
+</p>
+
+
+<div class="figure">
+<p><object type="image/svg+xml" data="priming-density-LV.svg" class="org-svg" width="500px">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div></li>
+
+</ul>
+
+</section>
+<section id="slide-org8db2225">
+<h3 id="org8db2225">Conclusion</h3>
+<ul>
+<li class="fragment">Speakers vary in the degree to which they exploit style shifting (or other externally-motivated baseline deflection tactics)</li>
+<li class="fragment">However, the model estimates a priming effect for basically all speakers
+<ul>
+<li class="fragment">Consistent with an automatic psychological process</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbeedc5a">
+<h2 id="orgbeedc5a">More on Middle English negation</h2>
+<div class="outline-text-2" id="text-orgbeedc5a">
+</div>
+</section>
+<section id="slide-orgf2edd74">
+<h3 id="orgf2edd74">The “fix” for not</h3>
+<ul>
+<li class="fragment">As Frisch discusses, <i>not</i> in ME is sometimes an adverb, and not sentence negation</li>
+<li class="fragment">In such uses, it always appears with <i>ne</i> (negative concord)</li>
+<li class="fragment">Itʼs possible to estimate the frequency of such usage
+<ul>
+<li class="fragment"><p>
+16%, according to Frisch
+</p>
+
+
+<div class="figure">
+<p><object type="image/svg+xml" data="patch-graph-explicit.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div></li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9836aa8">
+<h2 id="org9836aa8">References</h2>
+<div class="outline-text-2" id="text-org9836aa8">
+</div>
+</section>
+<section id="slide-org056573c">
+<h3 id="org056573c">My work</h3>
+<ul>
+<li class="fragment"><a href="https://aecay.github.io/dissertation.pdf">Dissertation</a>, especially section 4.3.5 (on priming)</li>
+<li class="fragment"><a href="http://www.meredithtamminga.com/documents/EcayTamminga2017_manuscript.pdf">Article from proceedings of DiGS 15</a> about ME negation (with Meredith Tamminga)</li>
+<li class="fragment"><a href="http://www.meredithtamminga.com/documents/TammingaAhernEcay2016.pdf">Article from Linguistics Vanguard</a> about GAMMs and priming (with MT and Chris Ahern)</li>
+
+</ul>
+
+</section>
+<section id="slide-org05302f2">
+<h3 id="org05302f2">Other work</h3>
+<div style="font-size:50%">
+<ul class='org-ref-bib'>
+<li><a name="Bock:1986"></a>Bock, Syntactic persistence in language production, <i>Cognitive Psychology</i>, <b>18</b>, 355-387 (1986).</li>
+<li><a name="Estival:1985"></a>Estival, Syntactic priming of the passive in English, <i>Text</i>, <b>5(1/2)</b>, 7-21 (1985).</li>
+<li><a name="Frisch1997"></a>Frisch, The change in negation in Middle English: a NEGP licensing account, <i>Lingua</i>, <b>101</b>, 21-64 (1997). <a href="http://dx.doi.org/10.1016/S0024-3841(96)00018-6">doi</a>.</li>
+<li><a name="Kauhanen2016"></a>Kauhanen, Neutral change, <i>Journal of Linguistics</i>, <b>53(02)</b>, 327-358 (2016). <a href="http://dx.doi.org/10.1017/s0022226716000141">doi</a>.</li>
+<li><a name="KauhanenWalkden2017"></a>Kauhanen & Walkden, Deriving the Constant Rate Effect, <i>Natural Language & Linguistic Theory</i>, <b></b>, (2017). <a href="http://dx.doi.org/10.1007/s11049-017-9380-1">doi</a>.</li>
+<li><a name="Kroch1989"></a>Kroch, Reflexes of grammar in patterns of language change, <i>Language Variation and Change</i>, <b>1(3)</b>, 199-244 (1989).</li>
+<li><a name="Pickering:1999"></a>Pickering & Branigan, Syntactic priming in language production, <i>Trends in Cognitive Science</i>, <b>3(4)</b>, 136-141 (1999).</li>
+<li><a name="Pickering:2008"></a>Pickering & Ferreira, Structural priming: A critical review, <i>Psycholinguistic Bulletin</i>, <b>124(3)</b>, 427-459 (2008).</li>
+<li><a name="Sankoff:1978"></a>Sankoff, D. and Laberge, S. “Statistical dependence among successive occurrences of a variable in discourse.”  In: <i>Linguistic variation: models and methods</i>.  Chapter 8.  (1978).</li>
+<li><a name="Wallage2008"></a>Wallage, Jespersen's Cycle in Middle English: Parametric variation and grammatical competition, <i>Lingua</i>, <b>118</b>, 643-674 (2008). <a href="http://dx.doi.org/10.1016/j.lingua.2007.09.001">doi</a>.</li>
+<li><a name="Wallage2012"></a>Wallage, Negative inversion, negative concord and sentential negation in the history of English, <i>English Language and Linguistics</i>, <b>16(01)</b>, 3-33 (2012). <a href="http://dx.doi.org/10.1017/s1360674311000268">doi</a>.</li>
+</ul>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
